@@ -1,0 +1,87 @@
+/* General settings */
+:root {
+  --primary: hsl(322, 100%, 66%);
+  --primary-light-pink: hsl(321, 100%, 78%);
+  --primary-light-red: hsl(0, 100%, 63%);
+  --background-dark: hsl(192, 100%, 9%);
+  --background-light: hsl(207, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 1.8rem;
+}
+
+/* UI Components */
+
+.btn-invert {
+  border: 1px solid var(--primary);
+  border-radius: 4rem;
+  background-color: #fff;
+  color: var(--primary);
+  font-size: 9px;
+  text-transform: capitalize;
+  padding: 6px 16px;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 4rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header .logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+header .logo-container .logo {
+  width: 6rem;
+}
+
+header .headings-group {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  color: var(--background-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .headings-group h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 8px;
+  margin-bottom: 1.5rem;
+}
+
+header .headings-group h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
