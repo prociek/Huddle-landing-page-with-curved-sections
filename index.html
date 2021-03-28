@@ -56,11 +56,13 @@
         </div>
       </section>
       <section class="sections grow-together">
-        <img
-          class="svg__top"
-          src="./images/bg-section-top-mobile-1.svg"
-          alt=""
-        />
+        <picture class="svg__top">
+          <source
+            srcset="images/bg-section-top-desktop-1.svg"
+            media="(min-width: 900px)"
+          />
+          <img src="./images/bg-section-top-mobile-1.svg" alt="" />
+        </picture>
         <img
           src="./images/illustration-grow-together.svg"
           alt="grow together"
