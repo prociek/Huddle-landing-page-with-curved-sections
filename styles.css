@@ -122,7 +122,7 @@ header .headings-group h2 {
   opacity: 0.5;
 }
 
-/* Sections */
+/* Sections with illustration*/
 .sections {
   display: flex;
   flex-direction: column;
@@ -173,7 +173,94 @@ header .headings-group h2 {
   line-height: 1.5;
 }
 
+/* Section Build your community */
+.build-your-community {
+  margin-bottom: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.build-your-community h2 {
+  font-family: Poppins, sans-serif;
+  color: var(--background-dark);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
 /* Footer */
+footer {
+  background-color: var(--background-dark);
+  color: #fff;
+  position: relative;
+  padding: 3.5rem 2rem 2rem 2rem;
+}
+
+footer .svg__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+footer .newslatter {
+  margin-bottom: 7rem;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+footer form {
+  text-align: right;
+}
+
+footer input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-bottom: 0.7rem;
+}
+
+footer button.btn-primary {
+  border-radius: 5px;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+footer svg {
+  width: 12rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .contact-item {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+footer .contact-item img {
+  margin-right: 1rem;
+}
+
+footer .social-box {
+  margin: 3rem 0;
+}
+
+footer .social-box i {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
