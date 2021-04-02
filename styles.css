@@ -149,6 +149,10 @@ header .headings-group h2 {
   transform: translateY(-95%);
 }
 
+.sections .svg__top img {
+  width: 100%;
+}
+
 .sections .svg__bottom {
   display: block;
   position: absolute;
@@ -156,6 +160,10 @@ header .headings-group h2 {
   left: 0;
   width: 100%;
   transform: translateY(95%);
+}
+
+.sections .svg__bottom img {
+  width: 100%;
 }
 
 .sections .illustration {
@@ -206,7 +214,11 @@ footer .svg__top {
   top: 0;
   left: 0;
   width: 100%;
-  transform: translateY(-90%);
+  transform: translateY(-92%);
+}
+
+footer .svg__top img {
+  width: 100%;
 }
 
 footer .newslatter {
@@ -218,7 +230,8 @@ footer h3 {
   margin-bottom: 1.2rem;
 }
 
-footer p {
+footer .newslatter p,
+footer .contact p {
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -229,10 +242,11 @@ footer form {
 }
 
 footer input {
+  font-size: 0.9rem;
   width: 100%;
   border: none;
   border-radius: 0.313rem;
-  padding: 1rem 2rem;
+  padding: 0.9rem 1rem;
   margin-bottom: 0.7rem;
 }
 
@@ -278,6 +292,194 @@ footer .social-box i {
 /* Media queries for 900px = 56.25em */
 @media (min-width: 56.25em) {
   html {
+    font-size: 18px;
+  }
+
+  /* UI */
+  .btn-invert {
+    font-size: 0.7rem;
+    padding: 0.4rem 1.3rem;
+  }
+
+  .btn-primary {
+    font-size: 0.8rem;
+    padding: 1rem 2.5rem;
+  }
+
+  /* Header */
+  header {
+    padding: 2rem;
+  }
+
+  header .logo-container {
+    margin-bottom: 8rem;
+  }
+
+  header .logo-container .logo {
+    width: 9rem;
+  }
+
+  header .headings-group h1 {
+    font-size: 2rem;
+  }
+
+  header .headings-group h2 {
+    width: 60%;
+    margin-bottom: 2em;
+  }
+
+  /* Community section */
+  .community {
+    margin: 2rem 0 10rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .community picture {
+    width: 70%;
+    margin: 0 auto 4.5rem auto;
+  }
+
+  .community .community-item {
+    width: 40%;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .community .community-item img {
+    width: 2rem;
+    transform: translateX(-4.5rem);
+  }
+
+  .community .community-item:first-of-type img {
+    transform: translateX(-3.5rem);
+  }
+
+  .community .community-item .amount {
+    font-size: 3.5rem;
+  }
+
+  .community .community-item .title {
+    font-size: 0.9rem;
+  }
+
+  /* Sections with illustration*/
+  .sections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10rem 0;
+    padding: 2rem 4rem 2rem 4rem;
+  }
+
+  .sections:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .sections div {
+    width: 50%;
+    padding: 0 3.5rem 0 0;
+  }
+
+  .sections:nth-of-type(odd) div {
+    padding: 0 0 0 3.5rem;
+  }
+
+  .sections .illustration {
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .sections h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .sections p {
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  /* Section Build your community */
+  .build-your-community {
+    margin-top: 7rem;
+    margin-bottom: 13rem;
+  }
+
+  .build-your-community h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 4rem 4rem 0.5rem;
+  }
+
+  footer .footer-contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .newslatter {
+    margin-left: 2rem;
+    grid-area: 1/2/2/2;
+    margin-bottom: 5rem;
+  }
+
+  footer .newslatter p,
+  footer .contact p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.8;
+    width: 17rem;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .contact-item {
+    margin: 1rem 0;
+  }
+
+  footer .contact p {
+    width: 15rem;
+  }
+
+  footer form {
+    text-align: left;
+  }
+
+  footer input {
+    width: 100%;
+  }
+
+  footer button.btn-primary {
+    padding: 0.9rem 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  footer svg {
+    margin-bottom: 1rem;
+  }
+
+  footer .contact-item {
+    font-size: 0.8rem;
+  }
+
+  .attribution {
+    margin: 0 auto;
+    font-size: 0.687rem;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/* Media queries for 1200px = 75em */
+@media (min-width: 75em) {
+  html {
     font-size: 20px;
   }
 
@@ -316,21 +518,11 @@ footer .social-box i {
   }
 
   /* Community section */
-  .community {
-    margin: 2rem 0 10rem 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .community picture {
-    width: 70%;
     margin: 0 auto 5.5rem auto;
   }
 
   .community .community-item {
-    width: 40%;
-    align-items: center;
     margin-bottom: 6rem;
   }
 
@@ -345,23 +537,16 @@ footer .social-box i {
 
   .community .community-item .title {
     font-size: 1.1rem;
-    opacity: 0.5;
   }
 
   /* Sections with illustration*/
   .sections {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin: 12rem 0;
     padding: 2rem 6.5rem 2rem 6.5rem;
   }
 
-  .sections:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
-
   .sections div {
+    width: 50%;
     padding: 0 5rem 0 0;
   }
 
@@ -369,20 +554,9 @@ footer .social-box i {
     padding: 0 0 0 5rem;
   }
 
-  .sections .illustration {
-    width: 45%;
-    margin-bottom: 0;
-  }
-
   .sections h2 {
-    text-align: left;
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-
-  .sections p {
-    text-align: left;
-    padding: 0;
   }
 
   /* Section Build your community */
@@ -401,47 +575,21 @@ footer .social-box i {
     padding: 6rem 6rem 0.5rem;
   }
 
-  footer .footer-contact-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  footer .newslatter {
-    margin-left: 2rem;
-    grid-area: 1/2/2/2;
+  footer input {
+    width: 50%;
+    margin-right: 1.5rem;
   }
 
   footer p {
-    font-size: 0.7rem;
-    font-weight: 600;
-    line-height: 1.8;
-    width: 62%;
+    margin-bottom: 2rem;
   }
 
-  footer .contact p {
-    width: 50%;
-  }
-
-  footer form {
-    text-align: left;
-  }
-
-  footer input {
-    width: 60%;
-    margin-right: 2rem;
-  }
-
-  footer button.btn-primary {
-    padding: 0.9rem 2.5rem;
-    font-size: 0.8rem;
-  }
-
-  footer svg {
-    margin-bottom: 1rem;
+  footer .newslatter {
+    margin-bottom: 7rem;
   }
 
   footer .contact-item {
-    font-size: 0.8rem;
+    margin: 1.5rem 0;
   }
 
   .attribution {
