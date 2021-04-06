@@ -262,7 +262,7 @@ footer input {
 
 footer label {
   position: absolute;
-  bottom: -0.5rem;
+  top: 3rem;
   left: 0;
   font-size: 0.6rem;
   color: var(--primary-light-red);
@@ -484,7 +484,7 @@ footer .social-box i:hover {
   }
 
   footer form {
-    text-align: left;
+    text-align: right;
   }
 
   footer input {
@@ -609,6 +609,10 @@ footer .social-box i:hover {
   /* Footer */
   footer {
     padding: 6rem 6rem 0.5rem;
+  }
+
+  footer form {
+    text-align: left;
   }
 
   footer input {
